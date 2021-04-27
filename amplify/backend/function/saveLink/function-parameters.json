@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "storage": {
+      "dynamo1a1b4240": [
+        "create"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

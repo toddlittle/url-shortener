@@ -1,0 +1,5 @@
+{
+    "tableName": "links",
+    "partitionKeyName": "hash",
+    "partitionKeyType": "S"
+}
