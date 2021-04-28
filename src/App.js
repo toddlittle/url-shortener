@@ -109,7 +109,7 @@ function LookupHashAndRedirect() {
   if (url) {
     return (
       <Warning>
-        <WarningMessage>We've not validated the links content. Visit at your own risk! </WarningMessage>
+        <WarningMessage>We've not validated the link's content. Visit at your own risk! </WarningMessage>
         <Button data-attr-url={url} onClick={() => setAgreedToExternal(true)}>Visit Link</Button>
       </Warning>
     );  
