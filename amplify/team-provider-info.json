@@ -1,33 +1,33 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-urlshortener-dev-215559-authRole",
-            "UnauthRoleArn": "arn:aws:iam::782965422074:role/amplify-urlshortener-dev-215559-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::782965422074:role/amplify-urlshortener-dev-215559-authRole",
-            "Region": "us-east-1",
-            "DeploymentBucketName": "amplify-urlshortener-dev-215559-deployment",
-            "UnauthRoleName": "amplify-urlshortener-dev-215559-unauthRole",
-            "StackName": "amplify-urlshortener-dev-215559",
-            "StackId": "arn:aws:cloudformation:us-east-1:782965422074:stack/amplify-urlshortener-dev-215559/b81ad360-a6fb-11eb-ba6d-0aac80a39b9b",
-            "AmplifyAppId": "db4h915vvjqgs"
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-urlshortener-dev-215559-authRole",
+      "UnauthRoleArn": "arn:aws:iam::782965422074:role/amplify-urlshortener-dev-215559-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::782965422074:role/amplify-urlshortener-dev-215559-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-urlshortener-dev-215559-deployment",
+      "UnauthRoleName": "amplify-urlshortener-dev-215559-unauthRole",
+      "StackName": "amplify-urlshortener-dev-215559",
+      "StackId": "arn:aws:cloudformation:us-east-1:782965422074:stack/amplify-urlshortener-dev-215559/b81ad360-a6fb-11eb-ba6d-0aac80a39b9b",
+      "AmplifyAppId": "db4h915vvjqgs"
+    },
+    "categories": {
+      "function": {
+        "saveLink": {
+          "deploymentBucketName": "amplify-urlshortener-dev-215559-deployment",
+          "s3Key": "amplify-builds/saveLink-504b775452535a38516f-build.zip"
         },
-        "categories": {
-            "function": {
-                "saveLink": {
-                    "deploymentBucketName": "amplify-urlshortener-dev-215559-deployment",
-                    "s3Key": "amplify-builds/saveLink-73707879784a6a4d6548-build.zip"
-                },
-                "lookupHash": {
-                    "deploymentBucketName": "amplify-urlshortener-dev-215559-deployment",
-                    "s3Key": "amplify-builds/lookupHash-33766f45534569313433-build.zip"
-                }
-            },
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "db4h915vvjqgs",
-                    "type": "cicd"
-                }
-            }
+        "lookupHash": {
+          "deploymentBucketName": "amplify-urlshortener-dev-215559-deployment",
+          "s3Key": "amplify-builds/lookupHash-6d446350353632554249-build.zip"
         }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "db4h915vvjqgs",
+          "type": "cicd"
+        }
+      }
     }
+  }
 }
