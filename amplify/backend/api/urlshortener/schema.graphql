@@ -3,15 +3,10 @@ type Link {
   hash: String!
 }
 
-input LinkInput {
-  url: String!
-  hash: String!
-}
-
 type Query {
   lookupHash(hash: String): String @function(name: "lookupHash-${env}")
 }
 
 type Mutation {
-  saveLink(input: LinkInput): Link @function(name: "saveLink-${env}")
+  saveLink(input: String): Link @function(name: "saveLink-${env}")
 }
