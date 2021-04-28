@@ -34,7 +34,7 @@ const Input = styled.input.attrs(() => ({
 }))`
   padding: 8px;
   margin: 8px;
-  width: calc(100% - 8px - 8px);
+  width: calc(100% - 16px - 2px - 16px - 2px);
   display: block;
 `;
 
