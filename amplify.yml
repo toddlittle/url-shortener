@@ -1,0 +1,42 @@
+version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - '# Execute Amplify CLI with the helper script'
+        - amplifyPush --simple
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn --frozen-lockfile
+    build:
+      commands:
+        - yarn run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+test:
+  phases:
+    preTest:
+      commands:
+        - yarn --frozen-lockfile
+        - yarn add wait-on
+        - yarn add pm2
+        - yarn add mocha@5.2.0 mochawesome mochawesome-merge mochawesome-report-generator
+        - npx pm2 start npm -- start
+        - 'npx wait-on http://localhost:3000'
+    test:
+      commands:
+        - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
+    postTest:
+      commands:
+        - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > cypress/report/mochawesome.json
+        - npx pm2 kill
+  artifacts:
+    baseDirectory: cypress
+    configFilePath: '**/mochawesome.json'
