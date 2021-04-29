@@ -28,7 +28,9 @@ With Amplify CLI ready, you can push the code up AWS for provisioning.
 From here you can run the app locally pointed at the deployed services with `yarn start`, or Amplify also provides mocking options for running entirely local. Before moving on, let's make sure all the generated CloudFormation files have been pushed to GitHub.
 
 `git add -A`
+
 `git commit -m "push up amplify config"`
+
 `git push origin main`
 
 ## Deploying the app
