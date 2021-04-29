@@ -1,6 +1,6 @@
-# [https://main.db4h915vvjqgs.amplifyapp.com/](url-shortener)
+# [url-shortener](https://main.db4h915vvjqgs.amplifyapp.com/)
 
-## Fork the [https://github.com/toddlittle/url-shortener](repo)
+## Fork the [repo](https://github.com/toddlittle/url-shortener)
 ## Clone the forked repo
 `git clone __FORKED_REPO_ADDRESS`
 
@@ -9,11 +9,11 @@
 `yarn`
 
 ## Configure Amplify and AWS
-This app makes use of a serverless architecture via the [https://docs.amplify.aws/cli](AWS Amplify Framework). The commands below cover the immediate steps required to get our app running, but the linked docs provide a wealth of knowledge if you run into issues or get stuck.
+This app makes use of a serverless architecture via the [AWS Amplify Framework](https://docs.amplify.aws/cli). The commands below cover the immediate steps required to get our app running, but the linked docs provide a wealth of knowledge if you run into issues or get stuck.
 
-If you do not already have an AWS account, you will need to [https://aws.amazon.com/](create one).
+If you do not already have an AWS account, you will need to [create one](https://aws.amazon.com/).
 
-After creating an account, you will need to [https://docs.amplify.aws/cli/start/install](configure the Amplify CLI). The intent of this step is to make your new AWS account available to the Amplify CLI.
+After creating an account, you will need to [configure the Amplify CLI](https://docs.amplify.aws/cli/start/install). The intent of this step is to make your new AWS account available to the Amplify CLI.
 
 `amplify configure`
 
@@ -33,11 +33,11 @@ From here you can run the app locally pointed at the deployed services with `yar
 
 ## Deploying the app
 
-Initial setup of the CI/CD process requires logging into the AWS [https://console.aws.amazon.com/amplify/home](Amplify console). 
+Initial setup of the CI/CD process requires logging into the AWS [Amplify console](https://console.aws.amazon.com/amplify/home). 
 
 First, you will need to connect to your github repo. You can do that from the Amplify home page by clicking into the url-shortener app and finding the Frontend Environments tab. From there select GitHub and follow the steps to connect your newly forked repo. Once connected, you will find the (Re)Deploy button on the app home page. 
 
-Lastly, don't forget to setup a redirect/rewrite to make subroutes play nice. See the [https://stackoverflow.com/questions/57449853/react-router-dom-not-working-correctly-on-amplify-console-aws](SO).
+Lastly, don't forget to setup a redirect/rewrite to make subroutes play nice. See the [SO](https://stackoverflow.com/questions/57449853/react-router-dom-not-working-correctly-on-amplify-console-aws).
 
 Once these steps are complete, the app will auto deploy and run tests on pushes to main based on the build steps in amplify.yml. It's also possible to configure PR builds/tests for more fine grained quality controls.
 
